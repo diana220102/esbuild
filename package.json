@@ -1,0 +1,19 @@
+{
+  "name": "esbuild",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild src/index.tsx --bundle --minify --sourcreamp --outfile=public/bundle.js",
+    "build:dev": "node esbuild.dev.js",
+    "start": "node esbuild.config.js -w",
+    "open":"open public/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.17.17"
+  },
+  "type": "module"
+}
